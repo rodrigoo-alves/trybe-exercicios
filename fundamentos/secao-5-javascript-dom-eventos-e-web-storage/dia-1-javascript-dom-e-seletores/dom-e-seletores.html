@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Desafio - JavaEscripito</h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+      const changeText = () => {
+        let years = document.getElementsByTagName('p')[1];
+        years.innerHTML = 'Daqui a dois anos me vejo em uma grande empresa de programação';
+      }
+      changeText();
+      
+      const changeColorGreen = () => {
+        let mainColor = document.getElementsByClassName('main-content')[0];
+        mainColor.style.background = 'rgb(76,164,109)';
+      }
+      changeColorGreen();
+
+      const changeColorRed = () => {
+        let secondColor = document.getElementsByClassName('center-content')[0];
+        secondColor.style.background = 'white';
+      }
+      changeColorRed();
+
+      const changeH1 = () => {
+        let mainText = document.getElementsByTagName('h1')[0];
+        mainText.innerHTML = 'Desafio - JavaScripit';
+      }
+      changeH1();
+
+      const paragraphUpperCase = () => {
+        let upperText = document.getElementsByTagName('p')[0];
+        upperText.style.textTransform = 'uppercase';
+      }
+      paragraphUpperCase();
+
+      const showParagraphs = () => {
+        let paragraphs = document.getElementsByTagName('p');
+        for (let index = 0; index < paragraphs.length; index += 1) {
+          console.log(paragraphs[index]);
+        }
+      }
+      showParagraphs();
+      
+    </script>
+  </body>
+</html>
