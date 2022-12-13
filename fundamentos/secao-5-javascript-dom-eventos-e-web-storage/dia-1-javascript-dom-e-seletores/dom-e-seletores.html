@@ -42,8 +42,24 @@
       </section>
     </main>
     <script>
-      const years = document.getElementsByTagName('p')[1];
-      years.innerHTML = 'Daqui a dois anos me vejo em uma grande empresa de programação'
+      const changeText = () => {
+        let years = document.getElementsByTagName('p')[1];
+        years.innerHTML = 'Daqui a dois anos me vejo em uma grande empresa de programação';
+      }
+      changeText();
+      
+      const changeColorGreen = () => {
+        let mainColor = document.getElementsByClassName('main-content')[0];
+        mainColor.style.background = 'rgb(76,164,109)';
+      }
+      changeColorGreen();
+
+      const changeColorRed = () => {
+        let secondColor = document.getElementsByClassName('center-content')[0];
+        secondColor.style.background = 'white'
+      }
+      changeColorRed();
+
     </script>
   </body>
 </html>
