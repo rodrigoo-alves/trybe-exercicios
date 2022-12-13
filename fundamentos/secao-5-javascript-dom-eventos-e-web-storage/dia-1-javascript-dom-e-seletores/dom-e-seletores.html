@@ -56,9 +56,15 @@
 
       const changeColorRed = () => {
         let secondColor = document.getElementsByClassName('center-content')[0];
-        secondColor.style.background = 'white'
+        secondColor.style.background = 'white';
       }
       changeColorRed();
+
+      const changeH1 = () => {
+        let mainText = document.getElementsByTagName('h1')[0];
+        mainText.innerHTML = 'Desafio - JavaScripit';
+      }
+      changeH1();
 
     </script>
   </body>
