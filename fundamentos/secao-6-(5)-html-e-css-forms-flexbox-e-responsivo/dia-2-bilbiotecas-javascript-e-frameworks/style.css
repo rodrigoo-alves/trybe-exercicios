@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  margin: 5px;
+}
+
+.button.is-success {
+  background-color: #48c78e;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button {
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  border: 1px solid transparent;
+  border-radius: 0.375em;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button.is-danger {
+  background-color: #f14668;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-danger.is-outlined:hover{
+  background-color: transparent;
+  border-color: #f14668;
+  color: #f14668;
+}
